@@ -4,7 +4,7 @@ import AdminSidebar from '../../components/AdminSidebar';
 import Loading from '../../components/Loading';
 import videoService from '../../services/videoService';
 import { toast } from 'react-toastify';
-import { Plus, Edit, Trash2, Eye } from 'lucide-react';
+import { Plus, Trash2, Eye } from 'lucide-react';
 
 const AdminVideos = () => {
   const navigate = useNavigate();

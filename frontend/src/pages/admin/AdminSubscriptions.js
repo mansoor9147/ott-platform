@@ -3,7 +3,7 @@ import AdminSidebar from '../../components/AdminSidebar';
 import Loading from '../../components/Loading';
 import subscriptionService from '../../services/subscriptionService';
 import { toast } from 'react-toastify';
-import { Plus, Edit, Trash2, Check } from 'lucide-react';
+import { Plus, Check } from 'lucide-react';
 
 const AdminSubscriptions = () => {
   const [plans, setPlans] = useState([]);

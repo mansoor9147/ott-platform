@@ -45,19 +45,19 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-4">Support</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-white transition">
+                <button className="hover:text-white transition text-left" onClick={() => {}}>
                   Help Center
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition">
+                <button className="hover:text-white transition text-left" onClick={() => {}}>
                   Terms of Service
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition">
+                <button className="hover:text-white transition text-left" onClick={() => {}}>
                   Privacy Policy
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -66,18 +66,18 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-white transition">
+              <button className="hover:text-white transition" onClick={() => {}} aria-label="Facebook">
                 <Facebook className="w-6 h-6" />
-              </a>
-              <a href="#" className="hover:text-white transition">
+              </button>
+              <button className="hover:text-white transition" onClick={() => {}} aria-label="Twitter">
                 <Twitter className="w-6 h-6" />
-              </a>
-              <a href="#" className="hover:text-white transition">
+              </button>
+              <button className="hover:text-white transition" onClick={() => {}} aria-label="Instagram">
                 <Instagram className="w-6 h-6" />
-              </a>
-              <a href="#" className="hover:text-white transition">
+              </button>
+              <button className="hover:text-white transition" onClick={() => {}} aria-label="Youtube">
                 <Youtube className="w-6 h-6" />
-              </a>
+              </button>
             </div>
           </div>
         </div>

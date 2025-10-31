@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -13,11 +13,7 @@ const Watchlist = () => {
   const { watchlist } = useSelector((state) => state.video);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetchWatchlist();
-  }, []);
-
-  const fetchWatchlist = async () => {
+  const fetchWatchlist = useCallback(async () => {
     try {
       setLoading(true);
       const response = await userService.getWatchlist();
@@ -27,7 +23,11 @@ const Watchlist = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [dispatch]);
+
+  useEffect(() => {
+    fetchWatchlist();
+  }, [fetchWatchlist]);
 
   return (
     <div className="min-h-screen bg-black">
